@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HallStatt</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/Adicionar.css">
+   
+    <script src="https://kit.fontawesome.com/96648dcea7.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar-expand d-flex align-items-center ">
+      <a href="/"><i class="fa-solid fa-arrow-left"></i></a>
+      <img src="/Images/Logo.png" alt="logo" width="50px"  id="Logo" height="50px">
+    <ul class=" navbar-nav float-end">
+      <li class="nav-item"><a href="#" class="nav-link"><i class="fa-brands fa-facebook-square"></i></a></li>
+      <li class="nav-item"><a href="#" class="nav-link"><i class="fa-brands fa-twitter-square"></i></a></li>
+      <li class="nav-item"><a href="#" class="nav-link"><i class="fa-brands fa-instagram-square"></i></a></li>
+      <li class="nav-item"><a href="#" class="nav-link"><i class="fa-brands fa-whatsapp-square"></i></a></li>
+    </ul>
+    </nav>
+    
+
+    <!--Cardápio-->
+  <form action="/Adicionar" method="post">
+
+    <div class="foods">
+
+<h1 style="margin:0px 0px 40px 25%;font-family: 'Cinzel', serif; font-size:50px">Burgues</h1>
+<label for="BigCeltic" ><img src="/Images/burguer1.jpg" alt=""> Big Celtic </label>
+<input type="radio" name="Hamburguer" value="BigCeltic"  id="BigCeltic">
+<label for="IrishForce"><img src="/Images/burger2.jpg" alt="">  IrishForce</label>
+<input type="radio" name="Hamburguer" value="IrishForce"  id="IrishForce"><br><br>
+<label for="Druid"><img src="/Images/burguer4.jpg" alt=""> Druid</label>
+<input type="radio" name="Hamburgues" value="Druid" id="Druid">
+<label for="Triskle"><img src="/Images/burguer3.jpg" alt="" style="margin-left:135px"> Triskle</label>
+<input type="radio" name="Hamburguer" value="Triskle" id="Triskle"><br><br>
+<label for="Trinity"><img src="/Images/Burguer/SaintPatrick.webp" alt="">  Trinity</label>
+<input type="radio" name="Hamburguer" value="Trinity" id="Trinity">
+</div>
+ 
+<div class="drinks">
+  <h1 style="margin:40px 0px 40px 25%;font-family: 'Cinzel', serif;font-size:50px">Bebidas</h1>
+<label for="Cola-Cola"><img src="/Images/Bebidas/Coca.jpg" alt="" > Coca-Cola</label> 
+<input type="radio" name="Bebidas" value="Coca-Cola" id="Cola-Cola" onclick="coca()">
+
+<label for="Sprite"><img src="/Images/Bebidas/sprite.jpg" alt=""> Sprite</label> 
+<input type="radio" name="Bebidas" value="Sprite" id="Sprite" onclick="spr()"><br><br>
+
+<label for="Guaraná"><img src="/Images/Bebidas/Guaraná.jpg" alt=""> Guaraná</label>
+<input type="radio" name="Bebidas" value="Guaraná" id="Guaraná" onclick="gua()">
+
+<label for="SucoU"><img src="/Images/Bebidas/Suco.jpg" alt="" style="margin-left:88px"> Del Valle Uva</label>
+<input type="radio" name="Bebidas" value="Del Valle Uva" id="SucoU" onclick="suU()">
+
+<label for="SucoL"><img src="/Images/Bebidas/Suco Dell vale.jpg" alt=""> Del Valle Laranja</label>
+<input type="radio" name="Bebidas" value="Del Valle Laranja" id="SucoL" onclick="suL()">
+  </div>
+  <button type="submit" class="btn btn-dark">Adicionar</button>
+  <button type="button" class="btn btn-dark botão" onclick="Reset()">Remover</button>
+
+  <div id="bloco">
+<p2 class="text-light " style="font-family: 'Cinzel', serif; font-size:15px;"> Coloque somente 1 bebida e <br>1 burguer</p2>
+</div>
+
+<br>
+
+  </form>
+</body>
+<%- include('partials/Pedidos')%>
+<%-include ('partials/footer')%>
+

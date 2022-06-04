@@ -1,0 +1,104 @@
+
+<%- include ('partials/header')%>
+<body>
+  <!--Capa do Site-->  
+<div class="container-fluid text-light  up" >
+<img src="/Images/Logo.png" alt="Hamburguer"  width="300px" height="300px" id="logo">  <h1 class="title" >HallStatt</h1>
+</div>
+
+<!--Listagem dos Burguers-->
+<div class="container-fluid burguer"  >
+   <h1 class="text-center pt-4 foods"> Hamburguers</h1>
+   <div class="celtic">
+  <div class="meat"><img src="/Images/burguer1.jpg" alt="burguer" width="100%" height="100%"><h1>Big Celtic</h1></div>
+  <div class="meat"><img src="/Images/burger2.jpg" alt="burguer"  width="100%" height="100%"><h1>IrishForce</h1></div>
+  <div class="meat"><img src="/Images/burguer4.jpg" alt="burguer"  width="100%" height="100%"><h1>Druid</h1></div>
+  <div class="meat"><img src="/Images/burguer3.jpg" alt="burguer"  width="100%" height="100%"><h1>Triskle</h1></div>
+  </div>
+</div>
+
+<!--Container do novo burguer-->
+<div class="container-fluid new" onmouseenter="trinity()"  onmouseleave="trini()" >
+
+<img src="/Images/Burguer/SaintPatrick.webp" width="55%" height="600px" alt="" id="patrick">
+<!--Container 2-->
+<div class="container-fluid new_2">
+  <img src="\Images\Burguer\trinyt.png" width="350px" height="350px" id="Tri"  >
+<h1 style="color:rgb(246, 186, 55);font-size:60px" id="font">New</h1>
+  <h1 style="color:rgb(255, 255, 255);font-family:'MedievalSharp', cursive;" id="novo">Trinity Burguer </h1>
+  <p style="font-size:30px; color:rgb(232, 174, 49);font-family: 'Bebas Neue', cursive;" id="saint2">"Para sentir a força celta que há em você "</p>
+</div>
+
+</div>
+<!--Music-->
+<div class="container-fluid p-0 mt-4  music" >
+ <img src="/Images/music.jpg" alt=""  width="600px" height="600px">
+ <div class="spotify">
+  <h1 class="mb-4" style=" font-family: 'Cinzel', serif;">"Música Celta não pode faltar"</h1>
+ <a href="https://open.spotify.com/album/6coLmgZr2qAhQqQG0ziapX?si=BiqHR0pnRPmcp5--UcWEEw" target="_blank"><i class="fa-brands fa-spotify" ></i></a>
+ <i class="fa-solid fa-angles-up" id="arrow"></i>
+ <h1 class="mt-4"></h1>
+
+
+
+</div>
+</div>
+
+<!--Pedido de Hamburguer-->
+
+<div class="container-fluid store ">
+  <img src="/Images/cernunnos.jpg" height="524px" width="33%"alt="">
+  <div class="container-fluid" style="background-color:rgb(22, 63, 17); width:34%;">
+  <h1>Faça seu pedido aqui</h1>
+  <a href="/Adicionar"><i class="material-icons">fastfood</i></a>
+ </div>
+<img src="/Images/Mãe terra.jpg" height="524px" width="33%" alt="">
+</div>
+
+
+
+<script>
+  var novo=document.getElementById('novo');
+  var saint2=document.getElementById('saint2');
+  var patrick=document.getElementById('patrick');
+  var Tri =document.getElementById('Tri');
+  var font=document.getElementById('font');
+  var arrow=document.getElementById('arrow');
+  
+  function trinity(){
+     
+      novo.style.display='inline-block';
+      saint2.style.display='inline-block';
+      patrick.style.display='inline-block';
+      Tri.style.marginTop='30px';
+      font.style.display='none';
+
+
+     
+  }
+
+  function trini(){
+  
+       novo.style.display='none';
+      saint2.style.display='none';
+      patrick.style.display='none';
+      Tri.style.marginTop='100px';
+      font.style.display='inline-block';
+
+  }
+
+
+  setInterval(function(){
+    
+    arrow.style.paddingTop='20px';
+
+  },1000);
+
+  setInterval(function(){
+    
+    arrow.style.paddingTop='40px';
+
+  },1500);
+
+</script>
+<%- include  ('partials/footer')%>
