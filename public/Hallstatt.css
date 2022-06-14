@@ -171,9 +171,23 @@ color:rgb(249, 249, 249);
 }
 
 .store .material-icons:hover{
-    color:rgb(88, 219, 12);
+    color:rgb(253, 186, 2);
     box-shadow: 0px 0px 20px rgb(74, 7, 7);
     font-size:85px;
 }
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(49, 78, 21) ;
+    color:white;
+    height: 100px;
+    font-size: 100%;
+    font-family: 'Cinzel', serif;
+
+}
+
+
 
 
